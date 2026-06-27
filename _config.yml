@@ -8,6 +8,9 @@ exclude:
   - _site
   - _site_*
   - tmp
+  - README.md
+  - dev-portfolio-blog.gemspec
+  - data/cloudflare-pages-plan.md
 
 plugins:
   - jekyll-seo-tag

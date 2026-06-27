@@ -1,12 +1,12 @@
-name: Build and Deploy
+name: CI
 
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -24,12 +24,5 @@ jobs:
         run: bundle install
 
       - name: Build site
-        run: bundle exec jekyll build --baseurl /dev-portfolio-blog
+        run: bundle exec jekyll build
 
-      - name: Deploy to sample-site
-        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          publish_branch: sample-site
