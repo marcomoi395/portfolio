@@ -8,6 +8,7 @@ Use this index to decide which `.omp/contexts/` files to read before starting wo
 |---|---|---|---|
 | [`dev-flow.md`](dev-flow.md) | Jekyll dev flow | Local run, stack, environment, Bun question | 2026-06-27 |
 | [`blog-posts.md`](blog-posts.md) | Blog post contract | Adding/editing posts, post metadata, blog index summary behavior | 2026-06-27 |
+| [`cloudflare-pages-deployment.md`](cloudflare-pages-deployment.md) | Cloudflare Pages deployment | Pages deploy target, branch, domain, build, output exclusions | 2026-06-27 |
 
 ## Maintenance Rules
 

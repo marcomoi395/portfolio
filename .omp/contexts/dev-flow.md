@@ -4,8 +4,7 @@
 
 - Repo is Ruby/Jekyll project, not JS app. `code-verified` via `Gemfile`, `dev-portfolio-blog.gemspec`, `Dockerfile`, `README.md`.
 - Target runtime is Ruby 3.2.x and Jekyll 4.4. `doc-verified` via `README.md` and `dev-portfolio-blog.gemspec`.
-- Native local dev flow: `bundle install` then `bundle exec jekyll serve`, open `http://localhost:4000`. `doc-verified`.
-- Docker local dev flow is recommended: `docker compose up --build`, open `http://localhost:4000`, stop with `docker compose down`. `doc-verified` via `README.md` and `compose.yml`.
+- Local dev is Docker-first: `docker compose up --build`, open `http://localhost:4000`, stop with `docker compose down`. Native `bundle exec jekyll serve` exists, but do not use it by default in this repo.
 - Source is mounted into container at `.:/app`, so Jekyll rebuilds when files change. `code-verified` via `compose.yml`.
 - Bun is not current runtime for this repo. `code-verified` via absence of `package.json` plus Ruby/Jekyll files and Docker/README evidence.
 

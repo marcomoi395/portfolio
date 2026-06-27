@@ -6,7 +6,7 @@ Use this index to decide which `.omp/rules/` files to read before starting work.
 
 | File | Topic | Use When | Keywords | Last Updated |
 |---|---|---|---|---|
-| [`jekyll-development.md`](jekyll-development.md) | Jekyll local development | Local run commands, Docker dev flow, Ruby/Jekyll setup | jekyll, ruby, bundle exec, docker compose, local development, localhost:4000 | 2026-06-27 |
+| [`jekyll-development.md`](jekyll-development.md) | Jekyll local development | Local run commands, Docker-first dev flow, Ruby/Jekyll setup | jekyll, ruby, bundle exec, docker compose, local development, localhost:4000 | 2026-06-27 |
 | [`jekyll-post-writing.md`](jekyll-post-writing.md) | Jekyll blog post writing | Writing or reviewing `content/_posts/*.md` posts, filename/front matter/summary rules | jekyll, blog post, front matter, description, markdown, slug, seo | 2026-06-27 |
 
 ## Maintenance Rules
