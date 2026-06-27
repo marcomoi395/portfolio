@@ -4,124 +4,69 @@ title: About
 permalink: /about/
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+Backend-focused developer with hands-on experience building production APIs using NestJS, TypeScript, and PostgreSQL. Passionate about system design, automation, and building tools that solve real problems. Seeking a backend engineering role to grow in a product-driven team.
 
-[Link to another page](./another-page.html).
+## Skills
 
-There should be whitespace between paragraphs.
+- **Languages:** TypeScript/JavaScript, Java, Golang, Python, C/C++
+- **Backend Frameworks:** NestJS, Spring Boot, Express.js
+- **Databases & ORM:** PostgreSQL, MongoDB, Prisma, TypeORM
+- **DevOps & Tools:** Docker, Docker Compose, Nginx, Redis, Git, Linux
+- **Concepts:** REST API Design, RBAC, Database Migration, Background Job Processing (BullMQ), CI/CD
+- **Other:** Electron, OpenAI API, Azure Speech API
+- **English:** Intermediate (reading & writing technical documentation)
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+## Work Experience
 
-# Header 1
+### TESO GLOBAL
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+**Backend Intern** | Mar 2026 - Jun 2026
 
-## Header 2
+- Consolidated two separate Admin system versions (v1 & v2) into a unified platform with zero data loss and full backward API compatibility.
+- Built bulk data processing features (Import/Export/Delete) with Excel handling, duplicate detection, and row-level validation, using BullMQ workers for async background jobs.
+- Implemented authentication system with RBAC and permission groups, redesigning menu hierarchy with database migrations for granular access control.
+- Wrote migration scripts to transform legacy v1 data structures into v2 schema while keeping both API versions operational during transition.
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+### HERA ELEVATOR
 
-### Header 3
+**Backend Developer** | Jun 2026 - Jul 2026
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+- Built a domain-driven maintenance engine with automatic contract and task generation mapped to construction warranty dates.
+- Implemented structured maintenance ticket sequencing with bulk ticket generation and automated DOCX report exports.
+- Developed reimbursement image export pipeline aggregating Cloudinary assets with strict export limits and failure tracking.
+- Designed fine-grained RBAC authorization with dynamic permission matrix and secure JWT auth backed by Redis sessions and cookies.
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+## Notable Projects
 
-#### Header 4
+### Melodies Merch Store
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+**Backend Developer** | Dec 2025 - Feb 2026 | [GitHub](https://github.com/marcomoi395/melodies-merch-store)
 
-##### Header 5
+- Built production e-commerce backend API with NestJS, PostgreSQL, and Prisma ORM.
+- Implemented JWT auth with RBAC for customer, staff, and admin roles.
+- Containerized API + PostgreSQL + Redis + Nginx reverse proxy with Docker Compose and SSL.
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+### Word2Card
 
-###### Header 6
+**Software Engineer** | Jan 2026 - Feb 2026 | [GitHub](https://github.com/marcomoi395/word2card)
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+- Built cross-platform Electron app that automates Anki flashcard creation.
+- Integrated OpenAI, Azure Speech, and Pexels into one pipeline.
+- Engineered bi-directional Notion sync for imports and status updates.
 
-### There's a horizontal rule below this.
+### FinTrack System
 
-* * *
+**Backend Developer** | Oct 2025 - Dec 2025 | [GitHub](https://github.com/marcomoi395/fintrack-system)
 
-### Here is an unordered list:
+- Developed automated MB Bank transaction tracker in Node.js using Puppeteer.
+- Designed background pipeline with Redis queues and cron jobs.
+- Containerized API + Captcha Resolver + Redis with Docker Compose.
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+## Education
 
-### And an ordered list:
+### Bachelor of Science in Information Security
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+Academy of Cryptography Techniques (Học viện Kỹ thuật mật mã) | Sep 2023 - Expected 2027
 
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
-
-## Emojis
+- TP. Hồ Chí Minh, Việt Nam
+- GPA: 3.2/4.0

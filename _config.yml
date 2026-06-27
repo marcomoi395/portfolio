@@ -1,7 +1,13 @@
-# resume_url: "Resume.pdf"
-author_name: "John Doe"
-url: johndoe.com
+resume_url: "Resume.pdf"
+author_name: "Thành Lợi"
+url: "https://portfolio.youngmarco.page"
+description: "Make it work, make it right, make it fast. — Kent Beck"
 collections_dir: content
+
+exclude:
+  - _site
+  - _site_*
+  - tmp
 
 plugins:
   - jekyll-seo-tag
