@@ -7,6 +7,7 @@ Use this index to decide which `.omp/contexts/` files to read before starting wo
 | File | Topic | Use When | Last Updated |
 |---|---|---|---|
 | [`dev-flow.md`](dev-flow.md) | Jekyll dev flow | Local run, stack, environment, Bun question | 2026-06-27 |
+| [`blog-posts.md`](blog-posts.md) | Blog post contract | Adding/editing posts, post metadata, blog index summary behavior | 2026-06-27 |
 
 ## Maintenance Rules
 
