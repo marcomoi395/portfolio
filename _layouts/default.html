@@ -30,8 +30,8 @@
 
 
 
-    <!-- Load the script async and wait for the page to render for script to execute -->
-    <script defer src="{{"/assets/js/theme.js" | relative_url }}"></script>
+    <!-- Theme switch disabled; default-light only for now -->
+    <!-- <script defer src="{{"/assets/js/theme.js" | relative_url }}"></script> -->
     <script defer src="{{"/assets/js/script.js" | relative_url }}"></script>
 
     {% include analytics.html %}
@@ -40,7 +40,7 @@
 
   </head>
     <body onload="onLoad()">
-      {% include themeSelector.html %}
+      <!-- {% include themeSelector.html %} -->
       {{ content }}
     </body>
 </html>
