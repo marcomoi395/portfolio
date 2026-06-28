@@ -20,8 +20,31 @@ html {
 body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
-  transition: background 0.1s ease-in, color 0.1s ease-in;
+  transition: background 0.1s ease-in, color 0.1s ease-in, opacity 120ms ease-in, transform 120ms ease-in;
+  animation: page-enter 180ms ease-out;
   // font-size: 120%;
+}
+
+body.is-leaving {
+  opacity: 0;
+  transform: translateY(4px);
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
+  }
 }
 .mid-section-home {
   text-align: center;
