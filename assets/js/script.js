@@ -1,8 +1,20 @@
+var transitionTimer = null;
+
 function onLoad() {
   setupExternalLinks();
 }
 
 document.addEventListener('DOMContentLoaded', setupPageTransitions);
+window.addEventListener('pageshow', resetPageTransitionState);
+window.addEventListener('pagehide', resetPageTransitionState);
+
+function resetPageTransitionState() {
+  if (transitionTimer !== null) {
+    window.clearTimeout(transitionTimer);
+    transitionTimer = null;
+  }
+  document.body.classList.remove('is-leaving');
+}
 
 function setupExternalLinks() {
   document.querySelectorAll('a[href]').forEach(function (link) {
@@ -24,10 +36,11 @@ function setupPageTransitions() {
       if (url.pathname === window.location.pathname && url.hash) return;
 
       event.preventDefault();
+      resetPageTransitionState();
       document.body.classList.add('is-leaving');
       var delay = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 120;
 
-      window.setTimeout(function () {
+      transitionTimer = window.setTimeout(function () {
         window.location.href = url.href;
       }, delay);
     });
